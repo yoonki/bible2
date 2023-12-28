@@ -15,8 +15,8 @@ def get_bible_text(book, chapter, verse, version):
 def main():
     st.title("성경 검색기")
     
-    book = st.text_input("성경 책 이름을 입력하세요: ", on_change=st.session_state.update)
-    chapter = st.text_input("성경 장을 입력하세요: ", on_change=st.session_state.update)
+    book = st.text_input("성경 책 이름을 입력하세요: 창세기, 요한복음...", on_change=st.session_state.update)
+    chapter = st.text_input("성경 장을 입력하세요: 숫자입력", on_change=st.session_state.update)
     verse = st.text_input("성경 절을 입력하세요: 1-10 1절부터10절까지 검색됨") # 1-10 1절부터10절까지 검색됨
 
     books_list = ['NIV','NIRV','NLT','KJV','KLB']
