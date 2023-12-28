@@ -13,7 +13,7 @@ def get_bible_text(book, chapter, verse, version):
     return result
 
 def main():
-    st.title("성경 검색기")
+    st.title("영어 성경으로 공부하기")
     
     book = st.text_input("성경 책 이름을 입력하세요: 창세기, 요한복음...", on_change=st.session_state.update)
     chapter = st.text_input("성경 장을 입력하세요: 숫자입력", on_change=st.session_state.update)
