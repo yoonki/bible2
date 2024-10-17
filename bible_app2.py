@@ -20,7 +20,7 @@ def main():
     chapter = st.text_input("성경 장을 입력하세요: ", value="6")
     verse = st.text_input("성경 절을 입력하세요: 1-10 1절부터10절까지 검색됨", value="9-13") 
 
-    books_list = ['NIV','NIRV','NLT','KJV','KLB']
+    books_list = ['NIV','NIRV','NLT','KJV','NKJV','KLB']
 
     if st.button('검색') or book and chapter and verse:
         for i in books_list:
